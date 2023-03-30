@@ -1,4 +1,10 @@
 #include <stdio.h>
+/**
+ *main - main function of the program.
+ *
+ *
+ * @return The exit status of the program.
+ */
 
 int main(void)
 {
