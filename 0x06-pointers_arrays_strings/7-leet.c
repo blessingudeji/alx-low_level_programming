@@ -3,7 +3,6 @@
  * leet - a function that encodes a string into 1337
  * @str: input string.
  * Return: the pointer to dest.
- * Date:2-03-2023
  */
 
 char *leet(char *str)
