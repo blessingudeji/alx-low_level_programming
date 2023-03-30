@@ -3,7 +3,6 @@
  * rot13 - This Funection encodes a string using rot13
  * @s:The string to encode.
  * Return: dest.
- * Date: 2-03-2023
  */
 
 char *rot13(char *s)
