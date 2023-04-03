@@ -4,15 +4,17 @@
 * @dest: Memory area
 * @src: the memory area
 * @n: number of bytes
+* Return: returns a pointer to dest
 */
+
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
-unsigned int j = 0;
+	unsigned int j = 0;
 
-while (j < n)
-{
+	while (j < n)
+	{
 	dest[j] = src[j];
 	j++;
-}
-return (dest);
+	}
+	return (dest);
 }
