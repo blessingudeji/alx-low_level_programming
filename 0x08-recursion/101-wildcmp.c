@@ -17,10 +17,13 @@ int wildcmp(char *s1, char *s2)
 		if (*(s2 + 1) == '*')
 			return (wildcmp(s1, s2 + 1));
 		if (wildcmp(s1, s2 + 1) || wildcmp(s1 + 1, s2))
-				return (1);
+			return (1);
 	}
-	/*when none of this conditions are met, it returns 0 because 
-	  the strings don't match*/
+
+	/*
+	   *when none of this conditions are met, it returns 0 because
+	  *the strings don't match
+	 */
 	return (0);
 }
 
