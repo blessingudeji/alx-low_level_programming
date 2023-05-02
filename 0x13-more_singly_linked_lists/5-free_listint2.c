@@ -7,19 +7,21 @@
 void free_listint2(listint_t **head)
 {
 	listint_t *tmp;
+	listint_t *curr;
 
-	/* Check if head pointer is NULL, and return if it is*/
-	if (head == NULL)
-		return;
-
-	/* Free each node in linked list */
-	while (*head != NULL)
+	/* check if head is not null*/
+	if (*head != NULL)
 	{
-		tmp = *head;
-		free(*head);
-		*head = tmp->next;
-	}
+
+		/* initialize the current node to head*/
+		curr = *head;
+		while ((tmp = curr) != NULL)/* loop through the linked list*/
+		{
+			curr = curr->next;
+			free(tmp);
+		}
 
 	/* Set the value of the head pointer to NULL*/
 	*head = NULL;
+	}
 }
