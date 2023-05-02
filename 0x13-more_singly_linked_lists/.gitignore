@@ -1,3 +1,4 @@
 *.o
 *-main.c
+*_putchar.c
 *.swp

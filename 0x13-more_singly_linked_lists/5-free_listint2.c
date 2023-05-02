@@ -12,8 +12,7 @@ void free_listint2(listint_t **head)
 	/* check if head is not null*/
 	if (*head != NULL)
 	{
-
-		/* initialize the current node to head*/
+	/* initialize the current node to head*/
 		curr = *head;
 		while ((tmp = curr) != NULL)/* loop through the linked list*/
 		{
