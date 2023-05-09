@@ -14,7 +14,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	/*Allocate memory for the buff*/
 	buff = malloc(letters);
-	if (buff == NULL)
+	if (!buff)
 		return (0);
 
 	/*Check if the filename is NULL*/
@@ -23,7 +23,6 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	/*Open file in read-write mode*/
 	fd = open(filename, O_RDWR);
-	fd = open(filename, O_RDONLY);
 	wrten = read(fd, buff, letters);
 	prntd = write(STDOUT_FILENO, buff, wrten);
 	if (fd == -1 || wrten == -1 || prntd == -1 || prntd != wrten)
